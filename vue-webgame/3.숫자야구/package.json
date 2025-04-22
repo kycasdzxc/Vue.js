@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "vue": "^2.7.0"
   },
   "devDependencies": {
+    "css-loader": "^4.2.1",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.7.0",
     "webpack": "^4.35.2",
